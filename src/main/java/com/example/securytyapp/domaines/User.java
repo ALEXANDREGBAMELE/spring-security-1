@@ -30,7 +30,7 @@ public class User implements UserDetails{
     @Column(nullable = false)
     private String email;
     @Column(nullable = false)
-    private Long password;
+    private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
 
@@ -43,10 +43,18 @@ public class User implements UserDetails{
     }
 
     @Override
+    public String getPassword() {
+        return this.password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
     public String getUsername() {
         return this.email;
     }
-
     @Override
     public boolean isAccountNonExpired() {
         return true;
