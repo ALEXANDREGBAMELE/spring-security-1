@@ -37,42 +37,42 @@ public class Token {
         public void setId(Integer id) {
             this.id = id;
         }
-    public String getToken() {
-        return token;
-    }
+        public String getToken() {
+            return token;
+        }
 
-    public void setToken(String token) {
-        this.token = token;
-    }
+        public void setToken(String token) {
+            this.token = token;
+        }
 
-    public TokenType getTokenType() {
-        return tokenType;
-    }
+        public TokenType getTokenType() {
+            return tokenType;
+        }
 
-    public void setTokenType(TokenType tokenType) {
-        this.tokenType = tokenType;
-    }
+        public void setTokenType(TokenType tokenType) {
+            this.tokenType = tokenType;
+        }
 
-    public boolean isExpired() {
-        return expired;
-    }
+        public boolean isExpired() {
+            return expired;
+        }
 
-    public void setExpired(boolean expired) {
-        this.expired = expired;
-    }
+        public void setExpired(boolean expired) {
+            this.expired = expired;
+        }
 
-    public boolean isRevoked() {
-        return revoked;
-    }
+        public boolean isRevoked() {
+            return revoked;
+        }
 
-    public void setRevoked(boolean revoked) {
-        this.revoked = revoked;
-    }
-    public User getUser() {
-        return user;
-    }
+        public void setRevoked(boolean revoked) {
+            this.revoked = revoked;
+        }
+        public User getUser() {
+            return user;
+        }
 
-    public void setUser(User user) {
+        public void setUser(User user) {
         this.user=user;
         }
 }
